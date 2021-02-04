@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Hishab Book</string>
+    <string name="register_button">Register</string>
+    <string name="Register_password_hint">Password</string>
+    <string name="Register_email_hint">Email</string>
+    <string name="Login_email_hint">Email</string>
+    <string name="Login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="image">ImageView</string>
+    <string name="new_user_signup">New User SignUp!!</string>
 </resources>

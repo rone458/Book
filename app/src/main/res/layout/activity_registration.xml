@@ -4,61 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".RegistrationActivity"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/expenses"/>
+        android:src="@drawable/expenses"
+        android:contentDescription="@string/image" />
 
     <EditText
-        android:id="@+id/email_et"
+        android:id="@+id/email_register_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/Login_email_hint"
-        android:layout_marginTop="30dp"
         android:layout_below="@id/imageView"
-        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/Register_email_hint"
         android:inputType="textEmailAddress"
-        android:textSize="20sp"
+        android:paddingStart="8dp"
         android:textColor="#000"
-        tools:ignore="RtlSymmetry" />
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/pass_et"
+        android:id="@+id/pass_register_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/Login_password_hint"
+        android:hint="@string/Register_password_hint"
         android:layout_marginTop="15dp"
-        android:layout_below="@id/email_et"
+        android:layout_below="@id/email_register_et"
         android:paddingStart="8dp"
+        android:textColorHint="@color/purple_500"
         android:inputType="textWebPassword"
         android:textSize="20sp"
         android:textColor="#000"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
+
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/tvR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pass_et"
+        android:layout_below="@id/pass_register_et"
         android:layout_marginTop="40dp"
         android:textColor="@color/purple_500"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
-        android:text="@string/new_user_signup"/>
+        android:text="Already User?"/>
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="@string/login_button"
-        android:background="@drawable/rounded"
+        android:text="@string/register_button"
         android:layout_alignParentBottom="true"
         android:textSize="20sp"
+        android:background="@drawable/rounded"
         android:textStyle="bold" />
 
 
