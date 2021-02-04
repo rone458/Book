@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 mAuth = FirebaseAuth.getInstance();
                 String user_email = email.getText().toString().trim();
                 String user_pass = password.getText().toString().trim();
-                if (!user_email.isEmpty() || !user_pass.isEmpty()) {
+                if (user_email.isEmpty() || user_pass.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Please enter all details", Toast.LENGTH_LONG).show();
                 } else {
                     mAuth.signInWithEmailAndPassword(user_email, user_pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {

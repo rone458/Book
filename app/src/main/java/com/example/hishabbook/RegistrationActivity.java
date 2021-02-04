@@ -43,7 +43,7 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = register_email.getText().toString().trim();
                 String pass = register_password.getText().toString().trim();
-                if (!email.isEmpty() || !pass.isEmpty()) {
+                if (email.isEmpty() || pass.isEmpty()) {
                     Toast.makeText(RegistrationActivity.this, "Please enter all details", Toast.LENGTH_LONG).show();
                 } else {
                     mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
