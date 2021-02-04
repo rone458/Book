@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "568023453528",
+    "project_id": "android-app-1dcc4",
+    "storage_bucket": "android-app-1dcc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568023453528:android:9f74a381ca1d97f8595f2d",
+        "android_client_info": {
+          "package_name": "com.example.hishabbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568023453528-2c9ov135vj3p4n31929as8eu9nrhllgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1wrI3p-4XkXdiNktEiFNT6a8LAqpNDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568023453528-2c9ov135vj3p4n31929as8eu9nrhllgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
